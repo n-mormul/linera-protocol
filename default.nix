@@ -30,7 +30,7 @@
     wasm-pack
   ];
   passthru = { inherit rust-toolchain; };
-  RUST_SRC_PATH = rust-toolchain.availableComponents.rust-src;
+  RUST_SRC_PATH = rust-toolchain.availableComponents.rust-src; //tets
   LIBCLANG_PATH = "${libclang.lib}/lib";
   ROCKSDB_LIB_DIR = "${rocksdb}/lib";
 }
